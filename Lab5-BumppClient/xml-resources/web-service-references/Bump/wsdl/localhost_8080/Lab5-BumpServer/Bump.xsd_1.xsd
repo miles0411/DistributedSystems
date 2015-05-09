@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.3 (tags/2.3-7528; 2013-04-29T19:34:10+0000) JAXWS-RI/2.2.8 JAXWS/2.2 svn-revision#unknown. --><xs:schema xmlns:tns="http://Lab5/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://Lab5/">
+
+<xs:element name="Bump" type="tns:Bump"/>
+
+<xs:element name="BumpResponse" type="tns:BumpResponse"/>
+
+<xs:element name="get" type="tns:get"/>
+
+<xs:element name="getResponse" type="tns:getResponse"/>
+
+<xs:complexType name="Bump">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="BumpResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="get">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:integer" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

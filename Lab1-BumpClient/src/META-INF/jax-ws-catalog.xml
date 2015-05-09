@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/Users/Preston/Library/Application%20Support/NetBeans/7.4/config/WebServices/Bump-wsdl/catalog/Bump.wsdl" uri="wsdl/Bump.wsdl"/>
+    <system systemId="http://localhost:8080/Lab5-RMI/Bump?xsd=1" uri="wsdl/localhost_8080/Lab5-RMI/Bump.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/Lab5-BumpServer/Bump?wsdl" uri="wsdl/localhost_8080/Lab5-BumpServer/Bump.wsdl"/>
+    <system systemId="http://localhost:8080/Lab5-BumpServer/Bump?xsd=1" uri="wsdl/localhost_8080/Lab5-BumpServer/Bump.xsd_1.xsd"/>
+</catalog>

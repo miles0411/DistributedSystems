@@ -1,0 +1,1330 @@
+Script started on Tue 28 Jan 2014 11:54:56 PM EST
+]0;preston@ubuntu: ~preston@ubuntu:~$ cat > sample.txt[Kcat > sample.txt[8Pd yuyul[3@mkdir[C[C[C[C[C[C[4Pcd /tmpunalias lsPS1='[\T]\u@\h:\w\$ '[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Krm -r yuyul[7PexitPS1='[\T]\u@\h:\w\$ '
+[11:55:01]preston@ubuntu:~$ PS1='[\T]\u@\h:\w\$ '[KPS1='[\T]\u@\h:\w\$ '[5Pcat > sample.txt[8Pd yuyul[3@mkdir[C[C[C[C[C[C[4Pcd /tmpunalias lsPS1='[\T]\u@\h:\w\$ '[11Punalias ls
+[11:55:05]preston@ubuntu:~$ unalias ls[Kcd /tmp
+[11:55:09]preston@ubuntu:/tmp$ c[Kmkdir yuyul
+[11:55:12]preston@ubuntu:/tmp$ cd yuyul
+[11:55:16]preston@ubuntu:/tmp/yuyul$ cat > sample.txt
+Learning Linux is so much fun!!!!
+This is a wonderful night!
+Happy Chinese New Year!!
+[11:55:45]preston@ubuntu:/tmp/yuyul$ cat sample.txt
+Learning Linux is so much fun!!!!
+This is a wonderful night!
+Happy Chinese New Year!!
+[11:55:54]preston@ubuntu:/tmp/yuyul$ sample2.txt[K[K[K[K[K[K[K[K[K[K[Kcat sample.txt[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+[11:56:04]preston@ubuntu:/tmp/yuyul$ cat sample.txt > sample2.txt
+[11:56:18]preston@ubuntu:/tmp/yuyul$ mv sample.txt old.txt
+[11:56:25]preston@ubuntu:/tmp/yuyul$ 
+[11:56:27]preston@ubuntu:/tmp/yuyul$ ls
+old.txt  sample2.txt
+[11:56:28]preston@ubuntu:/tmp/yuyul$ 
+[11:56:29]preston@ubuntu:/tmp/yuyul$ ls -lr
+total 8
+-rw-rw-r-- 1 preston preston 86 Jan 28 23:56 sample2.txt
+-rw-rw-r-- 1 preston preston 86 Jan 28 23:55 old.txt
+[11:56:31]preston@ubuntu:/tmp/yuyul$ 
+[11:56:34]preston@ubuntu:/tmp/yuyul$ chmod 400 old.txt
+[11:56:39]preston@ubuntu:/tmp/yuyul$ 
+[11:56:41]preston@ubuntu:/tmp/yuyul$ rm old.txt
+rm: remove write-protected regular file `old.txt'? y
+[11:56:44]preston@ubuntu:/tmp/yuyul$ 
+[11:56:46]preston@ubuntu:/tmp/yuyul$ cd ..
+[11:56:48]preston@ubuntu:/tmp$ rm 0r [K[K[K-r yuyul
+[11:56:52]preston@ubuntu:/tmp$ ca[Kd /var/log
+[11:56:56]preston@ubuntu:/var/log$ pwd
+/var/log
+[11:56:59]preston@ubuntu:/var/log$ 
+[11:57:00]preston@ubuntu:/var/log$ ls --help
+Usage: ls [OPTION]... [FILE]...
+List information about the FILEs (the current directory by default).
+Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -a, --all                  do not ignore entries starting with .
+  -A, --almost-all           do not list implied . and ..
+      --author               with -l, print the author of each file
+  -b, --escape               print C-style escapes for nongraphic characters
+      --block-size=SIZE      scale sizes by SIZE before printing them.  E.g.,
+                               `--block-size=M' prints sizes in units of
+                               1,048,576 bytes.  See SIZE format below.
+  -B, --ignore-backups       do not list implied entries ending with ~
+  -c                         with -lt: sort by, and show, ctime (time of last
+                               modification of file status information)
+                               with -l: show ctime and sort by name
+                               otherwise: sort by ctime, newest first
+  -C                         list entries by columns
+      --color[=WHEN]         colorize the output.  WHEN defaults to `always'
+                               or can be `never' or `auto'.  More info below
+  -d, --directory            list directory entries instead of contents,
+                               and do not dereference symbolic links
+  -D, --dired                generate output designed for Emacs' dired mode
+  -f                         do not sort, enable -aU, disable -ls --color
+  -F, --classify             append indicator (one of */=>@|) to entries
+      --file-type            likewise, except do not append `*'
+      --format=WORD          across -x, commas -m, horizontal -x, long -l,
+                               single-column -1, verbose -l, vertical -C
+      --full-time            like -l --time-style=full-iso
+  -g                         like -l, but do not list owner
+      --group-directories-first
+                             group directories before files.
+                               augment with a --sort option, but any
+                               use of --sort=none (-U) disables grouping
+  -G, --no-group             in a long listing, don't print group names
+  -h, --human-readable       with -l, print sizes in human readable format
+                               (e.g., 1K 234M 2G)
+      --si                   likewise, but use powers of 1000 not 1024
+  -H, --dereference-command-line
+                             follow symbolic links listed on the command line
+      --dereference-command-line-symlink-to-dir
+                             follow each command line symbolic link
+                             that points to a directory
+      --hide=PATTERN         do not list implied entries matching shell PATTERN
+                               (overridden by -a or -A)
+      --indicator-style=WORD  append indicator with style WORD to entry names:
+                               none (default), slash (-p),
+                               file-type (--file-type), classify (-F)
+  -i, --inode                print the index number of each file
+  -I, --ignore=PATTERN       do not list implied entries matching shell PATTERN
+  -k                         like --block-size=1K
+  -l                         use a long listing format
+  -L, --dereference          when showing file information for a symbolic
+                               link, show information for the file the link
+                               references rather than for the link itself
+  -m                         fill width with a comma separated list of entries
+  -n, --numeric-uid-gid      like -l, but list numeric user and group IDs
+  -N, --literal              print raw entry names (don't treat e.g. control
+                               characters specially)
+  -o                         like -l, but do not list group information
+  -p, --indicator-style=slash
+                             append / indicator to directories
+  -q, --hide-control-chars   print ? instead of non graphic characters
+      --show-control-chars   show non graphic characters as-is (default
+                             unless program is `ls' and output is a terminal)
+  -Q, --quote-name           enclose entry names in double quotes
+      --quoting-style=WORD   use quoting style WORD for entry names:
+                               literal, locale, shell, shell-always, c, escape
+  -r, --reverse              reverse order while sorting
+  -R, --recursive            list subdirectories recursively
+  -s, --size                 print the allocated size of each file, in blocks
+  -S                         sort by file size
+      --sort=WORD            sort by WORD instead of name: none -U,
+                             extension -X, size -S, time -t, version -v
+      --time=WORD            with -l, show time as WORD instead of modification
+                             time: atime -u, access -u, use -u, ctime -c,
+                             or status -c; use specified time as sort key
+                             if --sort=time
+      --time-style=STYLE     with -l, show times using style STYLE:
+                             full-iso, long-iso, iso, locale, +FORMAT.
+                             FORMAT is interpreted like `date'; if FORMAT is
+                             FORMAT1<newline>FORMAT2, FORMAT1 applies to
+                             non-recent files and FORMAT2 to recent files;
+                             if STYLE is prefixed with `posix-', STYLE
+                             takes effect only outside the POSIX locale
+  -t                         sort by modification time, newest first
+  -T, --tabsize=COLS         assume tab stops at each COLS instead of 8
+  -u                         with -lt: sort by, and show, access time
+                               with -l: show access time and sort by name
+                               otherwise: sort by access time
+  -U                         do not sort; list entries in directory order
+  -v                         natural sort of (version) numbers within text
+  -w, --width=COLS           assume screen width instead of current value
+  -x                         list entries by lines instead of by columns
+  -X                         sort alphabetically by entry extension
+  -Z, --context              print any SELinux security context of each file
+  -1                         list one file per line
+      --help     display this help and exit
+      --version  output version information and exit
+
+SIZE may be (or may be an integer optionally followed by) one of following:
+KB 1000, K 1024, MB 1000*1000, M 1024*1024, and so on for G, T, P, E, Z, Y.
+
+Using color to distinguish file types is disabled both by default and
+with --color=never.  With --color=auto, ls emits color codes only when
+standard output is connected to a terminal.  The LS_COLORS environment
+variable can change the settings.  Use the dircolors command to set it.
+
+Exit status:
+ 0  if OK,
+ 1  if minor problems (e.g., cannot access subdirectory),
+ 2  if serious trouble (e.g., cannot access command-line argument).
+
+Report ls bugs to bug-coreutils@gnu.org
+GNU coreutils home page: <http://www.gnu.org/software/coreutils/>
+General help using GNU software: <http://www.gnu.org/gethelp/>
+For complete documentation, run: info coreutils 'ls invocation'
+[11:57:04]preston@ubuntu:/var/log$ 
+[11:57:06]preston@ubuntu:/var/log$ tail -10[K[K[K[K[K[K[K[Kls -t
+parallels.log  jockey.log.1	 lightdm		      ufw.log	     btmp
+syslog	       apport.log	 udev			      installer      unattended-upgrades
+Xorg.0.log     pm-powersave.log  boot.log		      apt	     dist-upgrade
+auth.log       dpkg.log		 dmesg			      faillog	     hp
+kern.log       alternatives.log  parallels-tools-install.log  lastlog	     samba
+upstart        fontconfig.log	 dmesg.0		      bootstrap.log  speech-dispatcher
+syslog.1       wtmp		 news			      boot
+cups	       apport.log.1	 mail.err		      dmesg.1.gz
+jockey.log     ConsoleKit	 mail.log		      fsck
+[11:57:14]preston@ubuntu:/var/log$ 
+[11:57:20]preston@ubuntu:/var/log$ tail -10 paralles.log
+tail: cannot open `paralles.log' for reading: No such file or directory
+[11:57:26]preston@ubuntu:/var/log$ tail -10 paralles.logls.log
+01-28 23:51:17.701 I CPTOOL /prlcp:1901:b68ffb40/ SelectionRequest
+01-28 23:51:19.707 I CPTOOL /prlcp:1901:b68ffb40/ SelectionRequest
+01-28 23:51:21.708 I CPTOOL /prlcp:1901:b68ffb40/ SelectionRequest
+01-28 23:51:23.019 I CPTOOL /prlcp:1901:b68ffb40/ SelectionRequest
+01-28 23:51:23.141 I CPTOOL /prlcp:1901:b68ffb40/ SelectionRequest
+01-28 23:51:46.070 I CPTOOL /prlcp:1901:b68ffb40/ SelectionRequest
+01-28 23:52:15.330 I CPTOOL /prlcp:1901:b68ffb40/ SelectionRequest
+01-28 23:52:16.263 I CPTOOL /prlcp:1901:b68ffb40/ Leave selection ownership
+01-28 23:57:15.351 I CPTOOL /prlcp:1901:b72c2b40/ Receive : CPTOOL_CHECK_FOR_BUFFER_UPDATED m_IAmCliboardOwner=0
+01-28 23:57:15.352 I CPTOOL /prlcp:1901:b68ffb40/ SelectionNotify (XMaxRequestSize returns 65535)
+[11:57:38]preston@ubuntu:/var/log$ tail -10 parallels.log[K
+[11:57:42]preston@ubuntu:/var/log$ Find /etc -name */[K.congi[K[Kfig
+No command 'Find' found, did you mean:
+ Command 'find' from package 'findutils' (main)
+Find: command not found
+[11:57:53]preston@ubuntu:/var/log$ Find /etc -name *.config[C[1P[1@f
+/etc/X11/Xwrapper.config
+/etc/manpath.config
+find: `/etc/cups/ssl': Permission denied
+find: `/etc/ssl/private': Permission denied
+[11:58:00]preston@ubuntu:/var/log$ find /etc -name *.config[K[K
+/etc/insserv.conf
+/etc/X11/xorg.conf
+/etc/security/limits.conf
+/etc/security/sepermit.conf
+/etc/security/access.conf
+/etc/security/time.conf
+/etc/security/group.conf
+/etc/security/capability.conf
+/etc/security/pam_env.conf
+/etc/security/namespace.conf
+/etc/snmp/snmp.conf
+/etc/apg.conf
+/etc/wodim.conf
+/etc/libreoffice/psprint.conf
+/etc/ltrace.conf
+/etc/rsyslog.d/50-default.conf
+/etc/rsyslog.d/20-ufw.conf
+/etc/logrotate.conf
+/etc/fonts/conf.d/60-latin.conf
+/etc/fonts/conf.d/89-tlwg-garuda-synthetic.conf
+/etc/fonts/conf.d/69-unifont.conf
+/etc/fonts/conf.d/64-12-tlwg-loma.conf
+/etc/fonts/conf.d/10-antialias.conf
+/etc/fonts/conf.d/90-ttf-gujarati-fonts.conf
+/etc/fonts/conf.d/50-user.conf
+/etc/fonts/conf.d/30-metric-aliases.conf
+/etc/fonts/conf.d/10-hinting-slight.conf
+/etc/fonts/conf.d/64-14-tlwg-umpush.conf
+/etc/fonts/conf.d/80-delicious.conf
+/etc/fonts/conf.d/64-21-tlwg-typo.conf
+/etc/fonts/conf.d/65-nonlatin.conf
+/etc/fonts/conf.d/90-ttf-tamil-fonts.conf
+/etc/fonts/conf.d/89-tlwg-umpush-synthetic.conf
+/etc/fonts/conf.d/90-ttf-punjabi-fonts.conf
+/etc/fonts/conf.d/10-hinting.conf
+/etc/fonts/conf.d/20-fix-globaladvance.conf
+/etc/fonts/conf.d/45-latin.conf
+/etc/fonts/conf.d/90-ttf-telugu-fonts.conf
+/etc/fonts/conf.d/51-local.conf
+/etc/fonts/conf.d/90-ttf-bengali-fonts.conf
+/etc/fonts/conf.d/64-01-tlwg-kinnari.conf
+/etc/fonts/conf.d/89-tlwg-loma-synthetic.conf
+/etc/fonts/conf.d/49-sansserif.conf
+/etc/fonts/conf.d/64-13-tlwg-garuda.conf
+/etc/fonts/conf.d/90-fonts-nanum.conf
+/etc/fonts/conf.d/64-22-tlwg-typist.conf
+/etc/fonts/conf.d/65-fonts-persian.conf
+/etc/fonts/conf.d/89-tlwg-waree-synthetic.conf
+/etc/fonts/conf.d/53-monospace-lcd-filter.conf
+/etc/fonts/conf.d/64-23-tlwg-mono.conf
+/etc/fonts/conf.d/70-no-bitmaps.conf
+/etc/fonts/conf.d/64-11-tlwg-waree.conf
+/etc/fonts/conf.d/65-khmer.conf
+/etc/fonts/conf.d/90-ttf-malayalam-fonts.conf
+/etc/fonts/conf.d/90-ttf-kannada-fonts.conf
+/etc/fonts/conf.d/64-02-tlwg-norasi.conf
+/etc/fonts/conf.d/11-lcd-filter-lcddefault.conf
+/etc/fonts/conf.d/90-ttf-devanagari-fonts.conf
+/etc/fonts/conf.d/89-tlwg-kinnari-synthetic.conf
+/etc/fonts/conf.d/20-unhint-small-vera.conf
+/etc/fonts/conf.d/30-urw-aliases.conf
+/etc/fonts/conf.d/90-synthetic.conf
+/etc/fonts/conf.d/90-ttf-oriya-fonts.conf
+/etc/fonts/conf.d/40-nonlatin.conf
+/etc/fonts/conf.d/99pdftoopvp.conf
+/etc/fonts/conf.avail/10-sub-pixel-vbgr.conf
+/etc/fonts/conf.avail/60-latin.conf
+/etc/fonts/conf.avail/89-tlwg-garuda-synthetic.conf
+/etc/fonts/conf.avail/69-unifont.conf
+/etc/fonts/conf.avail/70-force-bitmaps.conf
+/etc/fonts/conf.avail/64-12-tlwg-loma.conf
+/etc/fonts/conf.avail/10-antialias.conf
+/etc/fonts/conf.avail/90-ttf-gujarati-fonts.conf
+/etc/fonts/conf.avail/99-language-selector-zh.conf
+/etc/fonts/conf.avail/50-user.conf
+/etc/fonts/conf.avail/30-metric-aliases.conf
+/etc/fonts/conf.avail/10-hinting-slight.conf
+/etc/fonts/conf.avail/64-14-tlwg-umpush.conf
+/etc/fonts/conf.avail/80-delicious.conf
+/etc/fonts/conf.avail/10-sub-pixel-vrgb.conf
+/etc/fonts/conf.avail/64-21-tlwg-typo.conf
+/etc/fonts/conf.avail/65-nonlatin.conf
+/etc/fonts/conf.avail/90-ttf-tamil-fonts.conf
+/etc/fonts/conf.avail/89-tlwg-umpush-synthetic.conf
+/etc/fonts/conf.avail/90-ttf-punjabi-fonts.conf
+/etc/fonts/conf.avail/10-unhinted.conf
+/etc/fonts/conf.avail/10-hinting.conf
+/etc/fonts/conf.avail/30-cjk-aliases.conf
+/etc/fonts/conf.avail/10-sub-pixel-rgb.conf
+/etc/fonts/conf.avail/20-fix-globaladvance.conf
+/etc/fonts/conf.avail/69-language-selector-zh-tw.conf
+/etc/fonts/conf.avail/69-language-selector-zh-hk.conf
+/etc/fonts/conf.avail/45-latin.conf
+/etc/fonts/conf.avail/90-ttf-telugu-fonts.conf
+/etc/fonts/conf.avail/51-local.conf
+/etc/fonts/conf.avail/90-ttf-bengali-fonts.conf
+/etc/fonts/conf.avail/64-01-tlwg-kinnari.conf
+/etc/fonts/conf.avail/89-tlwg-loma-synthetic.conf
+/etc/fonts/conf.avail/49-sansserif.conf
+/etc/fonts/conf.avail/70-yes-bitmaps.conf
+/etc/fonts/conf.avail/64-13-tlwg-garuda.conf
+/etc/fonts/conf.avail/90-fonts-nanum.conf
+/etc/fonts/conf.avail/64-22-tlwg-typist.conf
+/etc/fonts/conf.avail/10-sub-pixel-bgr.conf
+/etc/fonts/conf.avail/69-language-selector-zh-sg.conf
+/etc/fonts/conf.avail/65-fonts-persian.conf
+/etc/fonts/conf.avail/10-autohint.conf
+/etc/fonts/conf.avail/89-tlwg-waree-synthetic.conf
+/etc/fonts/conf.avail/69-language-selector-ka-ge.conf
+/etc/fonts/conf.avail/53-monospace-lcd-filter.conf
+/etc/fonts/conf.avail/64-23-tlwg-mono.conf
+/etc/fonts/conf.avail/70-no-bitmaps.conf
+/etc/fonts/conf.avail/64-11-tlwg-waree.conf
+/etc/fonts/conf.avail/69-language-selector-zh-cn.conf
+/etc/fonts/conf.avail/65-khmer.conf
+/etc/fonts/conf.avail/25-unhint-nonlatin.conf
+/etc/fonts/conf.avail/90-ttf-malayalam-fonts.conf
+/etc/fonts/conf.avail/90-ttf-kannada-fonts.conf
+/etc/fonts/conf.avail/64-02-tlwg-norasi.conf
+/etc/fonts/conf.avail/11-lcd-filter-lcddefault.conf
+/etc/fonts/conf.avail/90-ttf-devanagari-fonts.conf
+/etc/fonts/conf.avail/89-tlwg-kinnari-synthetic.conf
+/etc/fonts/conf.avail/20-unhint-small-vera.conf
+/etc/fonts/conf.avail/69-language-selector-ja-jp.conf
+/etc/fonts/conf.avail/10-no-sub-pixel.conf
+/etc/fonts/conf.avail/30-urw-aliases.conf
+/etc/fonts/conf.avail/90-synthetic.conf
+/etc/fonts/conf.avail/90-ttf-oriya-fonts.conf
+/etc/fonts/conf.avail/10-hinting-full.conf
+/etc/fonts/conf.avail/40-nonlatin.conf
+/etc/fonts/conf.avail/69-language-selector-zh-mo.conf
+/etc/fonts/conf.avail/10-hinting-medium.conf
+/etc/fonts/fonts.conf
+/etc/apport/crashdb.conf.d/cloud-archive.conf
+/etc/apport/crashdb.conf.d/indicator-appmenu-crashdb.conf
+/etc/apport/crashdb.conf.d/unity-crashdb.conf
+/etc/apport/crashdb.conf.d/ubuntuone-client-crashdb.conf
+/etc/apport/crashdb.conf
+/etc/dkms/framework.conf
+/etc/ghostscript/cidfmap.d/90gs-cjk-resource-cns1.conf
+/etc/ghostscript/cidfmap.d/90gs-cjk-resource-korea1.conf
+/etc/ghostscript/cidfmap.d/90gs-cjk-resource-japan1.conf
+/etc/ghostscript/cidfmap.d/90gs-cjk-resource-gb1.conf
+/etc/ghostscript/cidfmap.d/90gs-cjk-resource-japan2.conf
+/etc/ghostscript/fontmap.d/10gsfonts.conf
+/etc/ufw/ufw.conf
+/etc/ufw/sysctl.conf
+/etc/sane.d/hs2p.conf
+/etc/sane.d/snapscan.conf
+/etc/sane.d/st400.conf
+/etc/sane.d/dc240.conf
+/etc/sane.d/net.conf
+/etc/sane.d/dc25.conf
+/etc/sane.d/nec.conf
+/etc/sane.d/hp.conf
+/etc/sane.d/canon.conf
+/etc/sane.d/qcam.conf
+/etc/sane.d/s9036.conf
+/etc/sane.d/sp15c.conf
+/etc/sane.d/hp3900.conf
+/etc/sane.d/pie.conf
+/etc/sane.d/sharp.conf
+/etc/sane.d/mustek.conf
+/etc/sane.d/teco2.conf
+/etc/sane.d/dmc.conf
+/etc/sane.d/microtek.conf
+/etc/sane.d/v4l.conf
+/etc/sane.d/abaton.conf
+/etc/sane.d/leo.conf
+/etc/sane.d/hp5400.conf
+/etc/sane.d/coolscan.conf
+/etc/sane.d/umax.conf
+/etc/sane.d/fujitsu.conf
+/etc/sane.d/rts8891.conf
+/etc/sane.d/pixma.conf
+/etc/sane.d/lexmark.conf
+/etc/sane.d/plustek.conf
+/etc/sane.d/epjitsu.conf
+/etc/sane.d/sceptre.conf
+/etc/sane.d/mustek_usb.conf
+/etc/sane.d/coolscan3.conf
+/etc/sane.d/canon_dr.conf
+/etc/sane.d/gphoto2.conf
+/etc/sane.d/dll.conf
+/etc/sane.d/magicolor.conf
+/etc/sane.d/matsushita.conf
+/etc/sane.d/hp4200.conf
+/etc/sane.d/genesys.conf
+/etc/sane.d/avision.conf
+/etc/sane.d/artec_eplus48u.conf
+/etc/sane.d/microtek2.conf
+/etc/sane.d/canon630u.conf
+/etc/sane.d/dell1600n_net.conf
+/etc/sane.d/ibm.conf
+/etc/sane.d/saned.conf
+/etc/sane.d/kodak.conf
+/etc/sane.d/umax1220u.conf
+/etc/sane.d/plustek_pp.conf
+/etc/sane.d/teco3.conf
+/etc/sane.d/bh.conf
+/etc/sane.d/hpsj5s.conf
+/etc/sane.d/gt68xx.conf
+/etc/sane.d/epson.conf
+/etc/sane.d/apple.conf
+/etc/sane.d/xerox_mfp.conf
+/etc/sane.d/test.conf
+/etc/sane.d/umax_pp.conf
+/etc/sane.d/ricoh.conf
+/etc/sane.d/canon_pp.conf
+/etc/sane.d/u12.conf
+/etc/sane.d/tamarack.conf
+/etc/sane.d/dc210.conf
+/etc/sane.d/p5.conf
+/etc/sane.d/teco1.conf
+/etc/sane.d/stv680.conf
+/etc/sane.d/coolscan2.conf
+/etc/sane.d/sm3840.conf
+/etc/sane.d/artec.conf
+/etc/sane.d/agfafocus.conf
+/etc/sane.d/epson2.conf
+/etc/sane.d/mustek_pp.conf
+/etc/sane.d/ma1509.conf
+/etc/sane.d/cardscan.conf
+/etc/avahi/avahi-daemon.conf
+/etc/ca-certificates.conf
+/etc/polkit-1/localauthority.conf.d/50-localauthority.conf
+/etc/polkit-1/localauthority.conf.d/51-ubuntu-admin.conf
+/etc/polkit-1/nullbackend.conf.d/50-nullbackend.conf
+/etc/UPower/UPower.conf
+/etc/debconf.conf
+/etc/blkid.conf
+/etc/gtk-3.0/im-multipress.conf
+/etc/adduser.conf
+/etc/hp/hplip.conf
+/etc/ld.so.conf.d/i686-linux-gnu.conf
+/etc/ld.so.conf.d/libc.conf
+/etc/ld.so.conf.d/i386-linux-gnu_GL.conf
+/etc/fuse.conf
+/etc/ucf.conf
+/etc/kerneloops.conf
+/etc/sysctl.d/10-console-messages.conf
+/etc/sysctl.d/10-kernel-hardening.conf
+/etc/sysctl.d/10-ptrace.conf
+/etc/sysctl.d/10-zeropage.conf
+/etc/sysctl.d/10-ipv6-privacy.conf
+/etc/sysctl.d/10-network-security.conf
+/etc/nsswitch.conf
+/etc/pulse/client.conf
+/etc/pulse/daemon.conf
+/etc/at-spi2/accessibility.conf
+/etc/deluser.conf
+/etc/xdg/user-dirs.conf
+/etc/xdg/Trolltech.conf
+/etc/xdg/ubuntuone/logging.conf
+/etc/xdg/ubuntuone/syncdaemon.conf
+/etc/xdg/sni-qt.conf
+/etc/foomatic/filter.conf
+/etc/pam.conf
+/etc/rsyslog.conf
+/etc/hdparm.conf
+/etc/ld.so.conf
+/etc/gai.conf
+/etc/colord.conf
+/etc/modprobe.d/blacklist-ath_pci.conf
+/etc/modprobe.d/blacklist-rare-network.conf
+/etc/modprobe.d/vmwgfx-fbdev.conf
+/etc/modprobe.d/blacklist-framebuffer.conf
+/etc/modprobe.d/blacklist-watchdog.conf
+/etc/modprobe.d/blacklist.conf
+/etc/modprobe.d/prl_eth.conf
+/etc/modprobe.d/alsa-base.conf
+/etc/modprobe.d/dkms.conf
+/etc/modprobe.d/blacklist-parallels.conf
+/etc/modprobe.d/blacklist-modem.conf
+/etc/modprobe.d/blacklist-firewire.conf
+/etc/modprobe.d/blacklist-oss.conf
+/etc/ldap/ldap.conf
+/etc/updatedb.conf
+/etc/sensors3.conf
+/etc/mtools.conf
+/etc/init/avahi-daemon.conf
+/etc/init/anacron.conf
+/etc/init/tty6.conf
+/etc/init/rc.conf
+/etc/init/plymouth.conf
+/etc/init/rfkill-restore.conf
+/etc/init/udevtrigger.conf
+/etc/init/rcS.conf
+/etc/init/passwd.conf
+/etc/init/wait-for-state.conf
+/etc/init/tty4.conf
+/etc/init/setvtrgb.conf
+/etc/init/cron.conf
+/etc/init/apport.conf
+/etc/init/dbus.conf
+/etc/init/udev-fallback-graphics.conf
+/etc/init/network-interface-container.conf
+/etc/init/tty3.conf
+/etc/init/failsafe.conf
+/etc/init/udevmonitor.conf
+/etc/init/network-interface-security.conf
+/etc/init/mountall-shell.conf
+/etc/init/ureadahead-other.conf
+/etc/init/plymouth-upstart-bridge.conf
+/etc/init/network-manager.conf
+/etc/init/resolvconf.conf
+/etc/init/whoopsie.conf
+/etc/init/console-setup.conf
+/etc/init/plymouth-log.conf
+/etc/init/mounted-dev.conf
+/etc/init/bluetooth.conf
+/etc/init/module-init-tools.conf
+/etc/init/alsa-store.conf
+/etc/init/upstart-udev-bridge.conf
+/etc/init/rc-sysinit.conf
+/etc/init/hwclock.conf
+/etc/init/rsyslog.conf
+/etc/init/tty2.conf
+/etc/init/alsa-restore.conf
+/etc/init/mounted-tmp.conf
+/etc/init/hwclock-save.conf
+/etc/init/network-interface.conf
+/etc/init/procps.conf
+/etc/init/plymouth-stop.conf
+/etc/init/mounted-proc.conf
+/etc/init/console.conf
+/etc/init/mounted-debugfs.conf
+/etc/init/udev-finish.conf
+/etc/init/dmesg.conf
+/etc/init/mountall.conf
+/etc/init/container-detect.conf
+/etc/init/ufw.conf
+/etc/init/cups.conf
+/etc/init/acpid.conf
+/etc/init/upstart-socket-bridge.conf
+/etc/init/mountall-reboot.conf
+/etc/init/tty5.conf
+/etc/init/tty1.conf
+/etc/init/hybrid-gfx.conf
+/etc/init/modemmanager.conf
+/etc/init/udev.conf
+/etc/init/mountall-net.conf
+/etc/init/plymouth-ready.conf
+/etc/init/networking.conf
+/etc/init/plymouth-splash.conf
+/etc/init/prl-x11.conf
+/etc/init/friendly-recovery.conf
+/etc/init/atd.conf
+/etc/init/hostname.conf
+/etc/init/shutdown.conf
+/etc/init/control-alt-delete.conf
+/etc/init/rfkill-store.conf
+/etc/init/ureadahead.conf
+/etc/init/mounted-var.conf
+/etc/init/irqbalance.conf
+/etc/init/lightdm.conf
+/etc/init/mounted-run.conf
+/etc/init/flush-early-job-log.conf
+/etc/init/failsafe-x.conf
+/etc/mke2fs.conf
+/etc/bluetooth/network.conf
+/etc/bluetooth/proximity.conf
+/etc/bluetooth/input.conf
+/etc/bluetooth/serial.conf
+/etc/bluetooth/audio.conf
+/etc/bluetooth/main.conf
+/etc/bluetooth/rfcomm.conf
+/etc/usb_modeswitch.conf
+/etc/lightdm/users.conf
+/etc/lightdm/lightdm.conf
+/etc/gtk-2.0/im-multipress.conf
+/etc/cups/snmp.conf
+/etc/cups/subscriptions.conf
+/etc/cups/cupsd.conf
+find: `/etc/cups/ssl': Permission denied
+/etc/cups/cups-files.conf
+/etc/udev/udev.conf
+/etc/dhcp/dhclient.conf
+/etc/samba/smb.conf
+/etc/depmod.d/ubuntu.conf
+/etc/NetworkManager/NetworkManager.conf
+/etc/dbus-1/system.d/com.ubuntu.SoftwareCenter.conf
+/etc/dbus-1/system.d/com.ubuntu.SystemService.conf
+/etc/dbus-1/system.d/wpa_supplicant.conf
+/etc/dbus-1/system.d/Upstart.conf
+/etc/dbus-1/system.d/com.hp.hplip.conf
+/etc/dbus-1/system.d/org.freedesktop.PackageKit-aptd.conf
+/etc/dbus-1/system.d/com.redhat.NewPrinterNotification.conf
+/etc/dbus-1/system.d/org.freedesktop.ModemManager.conf
+/etc/dbus-1/system.d/nm-dispatcher.conf
+/etc/dbus-1/system.d/org.freedesktop.locale1.conf
+/etc/dbus-1/system.d/com.ubuntu.LanguageSelector.conf
+/etc/dbus-1/system.d/org.freedesktop.RealtimeKit1.conf
+/etc/dbus-1/system.d/bluetooth.conf
+/etc/dbus-1/system.d/org.freedesktop.PolicyKit1.conf
+/etc/dbus-1/system.d/org.freedesktop.ColorManager.conf
+/etc/dbus-1/system.d/nm-dhcp-client.conf
+/etc/dbus-1/system.d/org.gnome.SettingsDaemon.DateTimeMechanism.conf
+/etc/dbus-1/system.d/ConsoleKit.conf
+/etc/dbus-1/system.d/org.freedesktop.Accounts.conf
+/etc/dbus-1/system.d/org.freedesktop.UDisks.conf
+/etc/dbus-1/system.d/nm-avahi-autoipd.conf
+/etc/dbus-1/system.d/pulseaudio-system.conf
+/etc/dbus-1/system.d/org.freedesktop.DisplayManager.conf
+/etc/dbus-1/system.d/com.redhat.PrinterDriversInstaller.conf
+/etc/dbus-1/system.d/org.freedesktop.NetworkManager.conf
+/etc/dbus-1/system.d/com.ubuntu.SoftwareProperties.conf
+/etc/dbus-1/system.d/com.ubuntu.USBCreator.conf
+/etc/dbus-1/system.d/com.ubuntu.WhoopsiePreferences.conf
+/etc/dbus-1/system.d/org.debian.apt.conf
+/etc/dbus-1/system.d/com.ubuntu.DeviceDriver.conf
+/etc/dbus-1/system.d/org.freedesktop.UPower.conf
+/etc/dbus-1/system.d/org.debian.AptXapianIndex.conf
+/etc/dbus-1/system.d/avahi-dbus.conf
+/etc/dbus-1/system.d/dnsmasq.conf
+/etc/dbus-1/system.d/Mountall.Server.conf
+/etc/dbus-1/system.d/nm-pptp-service.conf
+/etc/dbus-1/system.d/org.freedesktop.hostname1.conf
+/etc/dbus-1/session.conf
+/etc/dbus-1/system.conf
+/etc/sysctl.conf
+/etc/netscsid.conf
+/etc/apparmor/subdomain.conf
+/etc/brltty.conf
+/etc/speech-dispatcher/speechd.conf
+/etc/speech-dispatcher/clients/gnome-speech.conf
+/etc/speech-dispatcher/clients/emacs.conf
+/etc/speech-dispatcher/modules/cicero.conf
+/etc/speech-dispatcher/modules/ivona.conf
+/etc/speech-dispatcher/modules/pico-generic.conf
+/etc/speech-dispatcher/modules/epos-generic.conf
+/etc/speech-dispatcher/modules/espeak-generic.conf
+/etc/speech-dispatcher/modules/swift-generic.conf
+/etc/speech-dispatcher/modules/dtk-generic.conf
+/etc/speech-dispatcher/modules/espeak-mbrola-generic.conf
+/etc/speech-dispatcher/modules/festival.conf
+/etc/speech-dispatcher/modules/flite.conf
+/etc/speech-dispatcher/modules/espeak.conf
+/etc/speech-dispatcher/modules/llia_phon-generic.conf
+/etc/speech-dispatcher/modules/ibmtts.conf
+/etc/gconf/2/evoldap.conf
+/etc/kernel-img.conf
+/etc/host.conf
+/etc/resolv.conf
+find: `/etc/ssl/private': Permission denied
+/etc/popularity-contest.conf
+/etc/initramfs-tools/update-initramfs.conf
+/etc/initramfs-tools/initramfs.conf
+/etc/pnm2ppa.conf
+[11:58:28]preston@ubuntu:/var/log$ find /etc -name *.conf[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+[11:58:38]preston@ubuntu:/var/log$ /etc/login.defs[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kmore /etc/login.defs
+#
+# /etc/login.defs - Configuration control definitions for the login package.
+#
+# Three items must be defined:  MAIL_DIR, ENV_SUPATH, and ENV_PATH.
+# If unspecified, some arbitrary (and possibly incorrect) value will
+# be assumed.  All other items are optional - if not specified then
+# the described action or option will be inhibited.
+#
+# Comment lines (lines beginning with "#") and blank lines are ignored.
+#
+# Modified for Linux.  --marekm
+
+# REQUIRED for useradd/userdel/usermod
+#   Directory where mailboxes reside, _or_ name of file, relative to the
+#   home directory.  If you _do_ define MAIL_DIR and MAIL_FILE,
+#   MAIL_DIR takes precedence.
+#
+#   Essentially:
+#      - MAIL_DIR defines the location of users mail spool files
+#        (for mbox use) by appending the username to MAIL_DIR as defined
+#        below.
+#      - MAIL_FILE defines the location of the users mail spool files as the
+#        fully-qualified filename obtained by prepending the user home
+#        directory before $MAIL_FILE
+#
+# NOTE: This is no more used for setting up users MAIL environment variable
+#       which is, starting from shadow 4.0.12-1 in Debian, entirely the
+#       job of the pam_mail PAM modules
+#       See default PAM configuration files provided for
+#       login, su, etc.
+#
+# This is a temporary situation: setting these variables will soon
+# move to /etc/default/useradd and the variables will then be
+# no more supported
+MAIL_DIR        /var/mail
+#MAIL_FILE      .mail
+
+#
+# Enable logging and display of /var/log/faillog login failure info.
+# This option conflicts with the pam_tally PAM module.
+[7m--More--(15%)[27m#[K
+FAILLOG_ENAB		yes
+
+#
+# Enable display of unknown usernames when login failures are recorded.
+#
+# WARNING: Unknown usernames may become world readable. 
+# See #290803 and #298773 for details about how this could become a security
+# concern
+LOG_UNKFAIL_ENAB	no
+
+#
+# Enable logging of successful logins
+#
+LOG_OK_LOGINS		no
+
+#
+# Enable "syslog" logging of su activity - in addition to sulog file logging.
+# SYSLOG_SG_ENAB does the same for newgrp and sg.
+#
+SYSLOG_SU_ENAB		yes
+SYSLOG_SG_ENAB		yes
+
+#
+# If defined, all su activity is logged to this file.
+#
+#SULOG_FILE	/var/log/sulog
+
+#
+# If defined, file which maps tty line to TERM environment parameter.
+# Each line of the file is in a format something like "vt100  tty01".
+#
+#TTYTYPE_FILE	/etc/ttytype
+
+#
+# If defined, login failures will be logged here in a utmp format
+# last, when invoked as lastb, will read /var/log/btmp, so...
+#
+FTMP_FILE	/var/log/btmp
+
+[7m--More--(23%)[27m#[K
+# If defined, the command name to display when running "su -".  For
+# example, if this is defined as "su" then a "ps" will display the
+# command is "-su".  If not defined, then "ps" would display the
+# name of the shell actually being run, e.g. something like "-sh".
+#
+SU_NAME		su
+
+#
+# If defined, file which inhibits all the usual chatter during the login
+# sequence.  If a full pathname, then hushed mode will be enabled if the
+# user's name or shell are found in the file.  If not a full pathname, then
+# hushed mode will be enabled if the file exists in the user's home directory.
+#
+HUSHLOGIN_FILE	.hushlogin
+#HUSHLOGIN_FILE	/etc/hushlogins
+
+#
+# *REQUIRED*  The default PATH settings, for superuser and normal users.
+#
+# (they are minimal, add the rest in the shell startup files)
+ENV_SUPATH	PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+ENV_PATH	PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+
+#
+# Terminal permissions
+#
+#	TTYGROUP	Login tty will be assigned this group ownership.
+#	TTYPERM		Login tty will be set to this permission.
+#
+# If you have a "write" program which is "setgid" to a special group
+# which owns the terminals, define TTYGROUP to the group number and
+# TTYPERM to 0620.  Otherwise leave TTYGROUP commented out and assign
+# TTYPERM to either 622 or 600.
+#
+# In Debian /usr/bin/bsd-write or similar programs are setgid tty
+# However, the default and recommended value for TTYPERM is still 0600
+# to not allow anyone to write to anyone else console or terminal
+
+# Users can still allow other people to write them by issuing 
+[7m--More--(38%)[27m# the "mesg y" command.
+
+TTYGROUP	tty
+TTYPERM		0600
+
+#
+# Login configuration initializations:
+#
+#	ERASECHAR	Terminal ERASE character ('\010' = backspace).
+#	KILLCHAR	Terminal KILL character ('\025' = CTRL/U).
+#	UMASK		Default "umask" value.
+#
+# The ERASECHAR and KILLCHAR are used only on System V machines.
+# 
+# UMASK is the default umask value for pam_umask and is used by
+# useradd and newusers to set the mode of the new home directories.
+# 022 is the "historical" value in Debian for UMASK
+# 027, or even 077, could be considered better for privacy
+# There is no One True Answer here : each sysadmin must make up his/her
+# mind.
+#
+# If USERGROUPS_ENAB is set to "yes", that will modify this UMASK default value
+# for private user groups, i. e. the uid is the same as gid, and username is
+# the same as the primary group name: for these, the user permissions will be
+# used as group permissions, e. g. 022 will become 002.
+#
+# Prefix these values with "0" to get octal, "0x" to get hexadecimal.
+#
+ERASECHAR	0177
+KILLCHAR	025
+UMASK		022
+
+#
+# Password aging controls:
+#
+#	PASS_MAX_DAYS	Maximum number of days a password may be used.
+#	PASS_MIN_DAYS	Minimum number of days allowed between password changes.
+#	PASS_WARN_AGE	Number of days warning given before a password expires.
+#
+PASS_MAX_DAYS	99999
+[7m--More--(51%)[27mPASS_MIN_DAYS	0
+PASS_WARN_AGE	7
+
+#
+# Min/max values for automatic uid selection in useradd
+#
+UID_MIN			 1000
+UID_MAX			60000
+# System accounts
+#SYS_UID_MIN		  100
+#SYS_UID_MAX		  999
+
+#
+# Min/max values for automatic gid selection in groupadd
+#
+GID_MIN			 1000
+GID_MAX			60000
+# System accounts
+#SYS_GID_MIN		  100
+#SYS_GID_MAX		  999
+
+#
+# Max number of login retries if password is bad. This will most likely be
+# overriden by PAM, since the default pam_unix module has it's own built
+# in of 3 retries. However, this is a safe fallback in case you are using
+# an authentication module that does not enforce PAM_MAXTRIES.
+#
+LOGIN_RETRIES		5
+
+#
+# Max time in seconds for login
+#
+LOGIN_TIMEOUT		60
+
+#
+# Which fields may be changed by regular users using chfn - use
+# any combination of letters "frwh" (full name, room number, work
+# phone, home phone).  If not defined, no changes are allowed.
+# For backward compatibility, "yes" = "rwh" and "no" = "frwh".
+# 
+[7m--More--(60%)[27mCHFN_RESTRICT		rwh
+
+#
+# Should login be allowed if we can't cd to the home directory?
+# Default in no.
+#
+DEFAULT_HOME	yes
+
+#
+# If defined, this command is run when removing a user.
+# It should remove any at/cron/print jobs etc. owned by
+# the user to be removed (passed as the first argument).
+#
+#USERDEL_CMD	/usr/sbin/userdel_local
+
+#
+# Enable setting of the umask group bits to be the same as owner bits
+# (examples: 022 -> 002, 077 -> 007) for non-root users, if the uid is
+# the same as gid, and username is the same as the primary group name.
+#
+# If set to yes, userdel will remove the user´s group if it contains no
+# more members, and useradd will create by default a group with the name
+# of the user.
+#
+USERGROUPS_ENAB yes
+
+#
+# Instead of the real user shell, the program specified by this parameter
+# will be launched, although its visible name (argv[0]) will be the shell's.
+# The program may do whatever it wants (logging, additional authentification,
+# banner, ...) before running the actual shell.
+#
+# FAKE_SHELL /bin/fakeshell
+
+#
+# If defined, either full pathname of a file containing device names or
+# a ":" delimited list of device names.  Root logins will be allowed only
+# upon these devices.
+#
+# This variable is used by login and su.
+[7m--More--(72%)[27m#[K
+#CONSOLE	/etc/consoles
+#CONSOLE	console:tty01:tty02:tty03:tty04
+
+#
+# List of groups to add to the user's supplementary group set
+# when logging in on the console (as determined by the CONSOLE
+# setting).  Default is none.
+#
+# Use with caution - it is possible for users to gain permanent
+# access to these groups, even when not logged in on the console.
+# How to do it is left as an exercise for the reader...
+#
+# This variable is used by login and su.
+#
+#CONSOLE_GROUPS		floppy:audio:cdrom
+
+#
+# If set to "yes", new passwords will be encrypted using the MD5-based
+# algorithm compatible with the one used by recent releases of FreeBSD.
+# It supports passwords of unlimited length and longer salt strings.
+# Set to "no" if you need to copy encrypted passwords to other systems
+# which don't understand the new algorithm.  Default is "no".
+#
+# This variable is deprecated. You should use ENCRYPT_METHOD.
+#
+#MD5_CRYPT_ENAB	no
+
+#
+# If set to MD5 , MD5-based algorithm will be used for encrypting password
+# If set to SHA256, SHA256-based algorithm will be used for encrypting password
+# If set to SHA512, SHA512-based algorithm will be used for encrypting password
+# If set to DES, DES-based algorithm will be used for encrypting password (default)
+# Overrides the MD5_CRYPT_ENAB option
+#
+# Note: It is recommended to use a value consistent with
+# the PAM modules configuration.
+#
+ENCRYPT_METHOD SHA512
+
+[7m--More--(85%)[27m#[K
+# Only used if ENCRYPT_METHOD is set to SHA256 or SHA512.
+#
+# Define the number of SHA rounds.
+# With a lot of rounds, it is more difficult to brute forcing the password.
+# But note also that it more CPU resources will be needed to authenticate
+# users.
+#
+# If not specified, the libc will choose the default number of rounds (5000).
+# The values must be inside the 1000-999999999 range.
+# If only one of the MIN or MAX values is set, then this value will be used.
+# If MIN > MAX, the highest value will be used.
+#
+# SHA_CRYPT_MIN_ROUNDS 5000
+# SHA_CRYPT_MAX_ROUNDS 5000
+
+################# OBSOLETED BY PAM ##############
+#						#
+# These options are now handled by PAM. Please	#
+# edit the appropriate file in /etc/pam.d/ to	#
+# enable the equivelants of them.
+#
+###############
+
+#MOTD_FILE
+#DIALUPS_CHECK_ENAB
+#LASTLOG_ENAB
+#MAIL_CHECK_ENAB
+#OBSCURE_CHECKS_ENAB
+#PORTTIME_CHECKS_ENAB
+#SU_WHEEL_ONLY
+#CRACKLIB_DICTPATH
+#PASS_CHANGE_TRIES
+#PASS_ALWAYS_WARN
+#ENVIRON_FILE
+#NOLOGINS_FILE
+#ISSUE_FILE
+#PASS_MIN_LEN
+#PASS_MAX_LEN
+#ULIMIT
+[7m--More--(95%)[27m#ENV_HZ[K
+#CHFN_AUTH
+#CHSH_AUTH
+#FAIL_DELAY
+
+################# OBSOLETED #######################
+#						  #
+# These options are no more handled by shadow.    #
+#                                                 #
+# Shadow utilities will display a warning if they #
+# still appear.                                   #
+#                                                 #
+###################################################
+
+# CLOSE_SESSIONS
+# LOGIN_STRING
+# NO_PASSWORD_CONSOLE
+# QMAIL_DIR
+
+
+
+[11:58:53]preston@ubuntu:/var/log$ 
+[11:58:54]preston@ubuntu:/var/log$ grep PASS /etc/login.defs
+#	[01;31m[KPASS[m[K_MAX_DAYS	Maximum number of days a password may be used.
+#	[01;31m[KPASS[m[K_MIN_DAYS	Minimum number of days allowed between password changes.
+#	[01;31m[KPASS[m[K_WARN_AGE	Number of days warning given before a password expires.
+[01;31m[KPASS[m[K_MAX_DAYS	99999
+[01;31m[KPASS[m[K_MIN_DAYS	0
+[01;31m[KPASS[m[K_WARN_AGE	7
+#[01;31m[KPASS[m[K_CHANGE_TRIES
+#[01;31m[KPASS[m[K_ALWAYS_WARN
+#[01;31m[KPASS[m[K_MIN_LEN
+#[01;31m[KPASS[m[K_MAX_LEN
+# NO_[01;31m[KPASS[m[KWORD_CONSOLE
+[11:59:07]preston@ubuntu:/var/log$ grep PASS /etc/login.defs > /tmp/list
+[11:59:27]preston@ubuntu:/var/log$ 
+[11:59:29]preston@ubuntu:/var/log$ wc -l /etc/loing[K[K[Kgin/[K.e[Kfe[K[Kdefs
+341 /etc/login.defs
+[11:59:41]preston@ubuntu:/var/log$ 
+[11:59:42]preston@ubuntu:/var/log$ locate / -n[K[K[K-name soucres[K[K[K[Krces.ls[Kist
+/etc/apt/sources.list
+/etc/apt/sources.list.d
+/usr/share/doc/apt/examples/sources.list
+/usr/share/man/de/man5/sources.list.5.gz
+/usr/share/man/es/man5/sources.list.5.gz
+/usr/share/man/fr/man5/sources.list.5.gz
+/usr/share/man/ja/man5/sources.list.5.gz
+/usr/share/man/man5/sources.list.5.gz
+/usr/share/man/pt/man5/sources.list.5.gz
+/var/lib/dpkg/info/python-pkg-resources.list
+[11:59:54]preston@ubuntu:/var/log$ 
+[11:59:56]preston@ubuntu:/var/log$ ANDREWID=uy[K[Kyuyul
+[12:00:03]preston@ubuntu:/var/log$ 
+[12:00:05]preston@ubuntu:/var/log$ echo $ANDREWID
+yuyul
+[12:00:10]preston@ubuntu:/var/log$ echo[K[K[K[K
+[12:00:16]preston@ubuntu:/var/log$ echo $PATH
+/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+[12:00:19]preston@ubuntu:/var/log$ 
+[12:00:23]preston@ubuntu:/var/log$ xeyes &
+[1] 30170
+[12:00:26]preston@ubuntu:/var/log$ 
+[12:00:27]preston@ubuntu:/var/log$ jobs
+[1]+  Running                 xeyes &
+[12:00:28]preston@ubuntu:/var/log$ 
+[12:00:32]preston@ubuntu:/var/log$ pa[Ks aux
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.2   3536  1648 ?        Ss   Jan28   0:01 /sbin/init
+root         2  0.0  0.0      0     0 ?        S    Jan28   0:00 [kthreadd]
+root         3  0.0  0.0      0     0 ?        S    Jan28   0:03 [ksoftirqd/0]
+root         6  0.0  0.0      0     0 ?        S    Jan28   0:00 [migration/0]
+root         7  0.0  0.0      0     0 ?        S    Jan28   0:00 [watchdog/0]
+root         8  0.0  0.0      0     0 ?        S<   Jan28   0:00 [cpuset]
+root         9  0.0  0.0      0     0 ?        S<   Jan28   0:00 [khelper]
+root        10  0.0  0.0      0     0 ?        S    Jan28   0:00 [kdevtmpfs]
+root        11  0.0  0.0      0     0 ?        S<   Jan28   0:00 [netns]
+root        12  0.0  0.0      0     0 ?        S    Jan28   0:00 [sync_supers]
+root        13  0.0  0.0      0     0 ?        S    Jan28   0:00 [bdi-default]
+root        14  0.0  0.0      0     0 ?        S<   Jan28   0:00 [kintegrityd]
+root        15  0.0  0.0      0     0 ?        S<   Jan28   0:00 [kblockd]
+root        16  0.0  0.0      0     0 ?        S<   Jan28   0:00 [ata_sff]
+root        17  0.0  0.0      0     0 ?        S    Jan28   0:00 [khubd]
+root        18  0.0  0.0      0     0 ?        S<   Jan28   0:00 [md]
+root        22  0.0  0.0      0     0 ?        S    Jan28   0:00 [khungtaskd]
+root        23  0.0  0.0      0     0 ?        S    Jan28   0:03 [kswapd0]
+root        24  0.0  0.0      0     0 ?        SN   Jan28   0:00 [ksmd]
+root        25  0.0  0.0      0     0 ?        SN   Jan28   0:00 [khugepaged]
+root        26  0.0  0.0      0     0 ?        S    Jan28   0:00 [fsnotify_mark]
+root        27  0.0  0.0      0     0 ?        S    Jan28   0:00 [ecryptfs-kthrea]
+root        28  0.0  0.0      0     0 ?        S<   Jan28   0:00 [crypto]
+root        37  0.0  0.0      0     0 ?        S<   Jan28   0:00 [kthrotld]
+root        42  0.0  0.0      0     0 ?        S    Jan28   0:00 [scsi_eh_0]
+root        43  0.0  0.0      0     0 ?        S    Jan28   0:00 [scsi_eh_1]
+root        44  0.0  0.0      0     0 ?        S    Jan28   0:00 [scsi_eh_2]
+root        45  0.0  0.0      0     0 ?        S    Jan28   0:00 [scsi_eh_3]
+root        46  0.0  0.0      0     0 ?        S    Jan28   0:00 [scsi_eh_4]
+root        47  0.0  0.0      0     0 ?        S    Jan28   0:00 [scsi_eh_5]
+root        49  0.0  0.0      0     0 ?        S    Jan28   0:00 [scsi_eh_6]
+root        50  0.0  0.0      0     0 ?        S    Jan28   0:00 [scsi_eh_7]
+root        54  0.0  0.0      0     0 ?        S    Jan28   0:00 [kworker/u:8]
+root        55  0.0  0.0      0     0 ?        S    Jan28   0:00 [kworker/u:9]
+root        57  0.0  0.0      0     0 ?        S<   Jan28   0:00 [binder]
+root        76  0.0  0.0      0     0 ?        S<   Jan28   0:00 [deferwq]
+root        77  0.0  0.0      0     0 ?        S<   Jan28   0:00 [charger_manager]
+root        78  0.0  0.0      0     0 ?        S<   Jan28   0:00 [devfreq_wq]
+root       217  0.0  0.0      0     0 ?        S    Jan28   0:12 [jbd2/sda1-8]
+root       218  0.0  0.0      0     0 ?        S<   Jan28   0:00 [ext4-dio-unwrit]
+102        439  0.0  0.2   4352  2092 ?        Ss   Jan28   0:10 dbus-daemon --system --fork --activ
+root       464  0.0  0.1   4744   968 ?        Ss   Jan28   0:00 /usr/sbin/bluetoothd
+root       513  0.0  0.0      0     0 ?        S<   Jan28   0:00 [krfcommd]
+root       636  0.0  0.0      0     0 ?        S    Jan28   0:00 [vballoon]
+root       653  0.0  0.0      0     0 ?        S<   Jan28   0:00 [kpsmoused]
+root       782  0.0  0.0   2848   384 ?        S    Jan28   0:00 upstart-socket-bridge --daemon
+root       929  0.0  0.0   4632   532 tty4     Ss+  Jan28   0:00 /sbin/getty -8 38400 tty4
+root       941  0.0  0.0   4632   532 tty5     Ss+  Jan28   0:00 /sbin/getty -8 38400 tty5
+root       961  0.0  0.0   4632   532 tty2     Ss+  Jan28   0:00 /sbin/getty -8 38400 tty2
+root       963  0.0  0.0   4632   532 tty3     Ss+  Jan28   0:00 /sbin/getty -8 38400 tty3
+root       969  0.0  0.0   4632   532 tty6     Ss+  Jan28   0:00 /sbin/getty -8 38400 tty6
+root       983  0.0  0.0   2620   684 ?        Ss   Jan28   0:00 cron
+daemon     984  0.0  0.0   2472   172 ?        Ss   Jan28   0:00 atd
+root      1157  0.0  0.0  37176   228 ?        Ssl  Jan28   0:00 /usr/bin/prltoolsd -p /var/run/prlt
+root      1162  0.0  0.0  37180   472 ?        S    Jan28   0:05 /usr/bin/prltoolsd -p /var/run/prlt
+root      1170  0.0  0.0   4632   532 tty1     Ss+  Jan28   0:00 /sbin/getty -8 38400 tty1
+root      1186  0.0  0.3  34708  2604 ?        Ssl  Jan28   0:00 lightdm
+root      1193  1.0  8.8  97360 67816 tty7     RLsl+ Jan28   4:26 /usr/bin/X :0 -auth /var/run/light
+root      1251  0.0  0.2  29100  2256 ?        Sl   Jan28   0:00 /usr/sbin/console-kit-daemon --no-d
+colord    1451  0.0  0.3  53652  2948 ?        Sl   Jan28   0:00 /usr/lib/i386-linux-gnu/colord/colo
+root      1484  0.0  0.3  17872  2324 ?        Sl   Jan28   0:00 lightdm --session-child 12 19
+rtkit     1516  0.0  0.1  21332   828 ?        SNl  Jan28   0:00 /usr/lib/rtkit/rtkit-daemon
+preston   1785  0.0  0.3  54912  2708 ?        Sl   Jan28   0:00 /usr/bin/gnome-keyring-daemon --dae
+preston   1795  0.0  0.8  50272  6152 ?        Ssl  Jan28   0:00 gnome-session --session=ubuntu
+preston   1831  0.0  0.0   4080    20 ?        Ss   Jan28   0:00 /usr/bin/ssh-agent /usr/bin/dbus-la
+preston   1834  0.0  0.0   3940   180 ?        S    Jan28   0:00 /usr/bin/dbus-launch --exit-with-se
+preston   1835  0.0  0.3   6544  2644 ?        Ss   Jan28   0:10 //bin/dbus-daemon --fork --print-pi
+preston   1846  0.0  1.3 203484 10356 ?        Rl   Jan28   0:11 /usr/lib/gnome-settings-daemon/gnom
+preston   1856  0.0  0.2   8408  1588 ?        S    Jan28   0:00 /usr/lib/gvfs/gvfsd
+preston   1858  0.0  0.2  35056  2000 ?        Sl   Jan28   0:00 /usr/lib/gvfs//gvfs-fuse-daemon -f
+preston   1864  0.7  9.4 211892 72728 ?        Rl   Jan28   3:21 compiz
+preston   1868  0.0  0.3   9404  2488 ?        S    Jan28   0:00 /usr/lib/i386-linux-gnu/gconf/gconf
+preston   1878  0.0  0.2  99584  1660 ?        S<l  Jan28   0:00 /usr/bin/pulseaudio --start --log-t
+preston   1879  0.0  1.1  78784  8936 ?        Sl   Jan28   0:01 /usr/lib/policykit-1-gnome/polkit-g
+preston   1882  0.0  0.9  77656  6932 ?        Sl   Jan28   0:00 bluetooth-applet
+preston   1883  0.0  2.9 162692 22704 ?        Rl   Jan28   0:18 nautilus -n
+preston   1884  0.0  0.7  57268  5404 ?        Sl   Jan28   0:00 /usr/lib/gnome-settings-daemon/gnom
+preston   1885  0.0  0.2  67636  1940 ?        SLl  Jan28   0:05 /usr/bin/prlcc
+preston   1890  0.0  0.1  14104  1076 ?        S    Jan28   0:00 /usr/lib/pulseaudio/pulse/gconf-hel
+preston   1893  0.1  0.0  14528   756 ?        Ssl  Jan28   0:51 /usr/bin/prl_wmouse_d -d
+preston   1900  0.0  0.1  31840  1072 ?        SLl  Jan28   0:03 /usr/bin/prldnd
+preston   1901  0.0  0.1  23632   892 ?        Sl   Jan28   0:00 /usr/bin/prlcp
+preston   1922  0.0  0.3  29700  2892 ?        S    Jan28   0:00 /usr/lib/gvfs/gvfs-gdu-volume-monit
+root      1924  0.0  0.3  25496  2380 ?        Sl   Jan28   0:00 /usr/lib/udisks/udisks-daemon
+root      1925  0.0  0.0   6556   436 ?        S    Jan28   0:00 udisks-daemon: not polling any devi
+preston   1930  0.0  0.1   9212  1512 ?        S    Jan28   0:00 /usr/lib/gvfs/gvfs-gphoto2-volume-m
+preston   1932  0.0  0.1  20488  1192 ?        Sl   Jan28   0:01 /usr/lib/gvfs/gvfs-afc-volume-monit
+preston   1944  0.0  0.3  10300  2928 ?        S    Jan28   0:00 /usr/lib/gvfs/gvfsd-trash --spawner
+preston   1956  0.0  0.2  32520  1880 ?        Sl   Jan28   0:00 /usr/lib/dconf/dconf-service
+preston   1970  0.0  0.2   8440  1552 ?        S    Jan28   0:00 /usr/lib/gvfs/gvfsd-burn --spawner
+preston   1973  0.0  1.0  76168  7988 ?        Sl   Jan28   0:06 /usr/lib/bamf/bamfdaemon
+preston   1978  0.0  0.1   8332  1464 ?        S    Jan28   0:00 /usr/lib/gvfs/gvfsd-metadata
+preston   1988  0.0  2.2  92900 17020 ?        Sl   Jan28   0:13 /usr/lib/unity/unity-panel-service
+preston   1990  0.0  0.6  63328  4716 ?        Sl   Jan28   0:05 /usr/lib/indicator-appmenu/hud-serv
+preston   2006  0.0  0.4  63440  3748 ?        Sl   Jan28   0:00 /usr/lib/indicator-datetime/indicat
+preston   2007  0.0  0.3  52320  2612 ?        Sl   Jan28   0:00 /usr/lib/indicator-application/indi
+preston   2010  0.0  0.4  66536  3472 ?        Sl   Jan28   0:00 /usr/lib/indicator-messages/indicat
+preston   2011  0.0  0.7  60940  5788 ?        Sl   Jan28   0:00 /usr/lib/indicator-printers/indicat
+preston   2013  0.0  0.5  75900  4012 ?        Sl   Jan28   0:00 /usr/lib/indicator-session/indicato
+preston   2017  0.0  0.4 126664  3540 ?        Sl   Jan28   0:00 /usr/lib/indicator-sound/indicator-
+preston   2049  0.0  0.1   7980  1512 ?        S    Jan28   0:00 /usr/lib/geoclue/geoclue-master
+preston   2057  0.0  0.2  21448  2196 ?        S    Jan28   0:00 /usr/lib/ubuntu-geoip/ubuntu-geoip-
+preston   2062  0.0  0.0   2236   364 ?        Ss   Jan28   0:00 /bin/sh -c /usr/bin/compiz-decorato
+preston   2063  0.0  0.9  43172  7368 ?        Sl   Jan28   0:07 /usr/bin/gtk-window-decorator
+preston   2072  0.0  0.7  42660  5456 ?        Sl   Jan28   0:00 /usr/lib/gnome-disk-utility/gdu-not
+preston   2076  0.0  0.7  73684  5524 ?        Sl   Jan28   0:00 telepathy-indicator
+preston   2082  0.0  0.3  42228  3004 ?        Sl   Jan28   0:00 /usr/lib/telepathy/mission-control-
+preston   2087  0.0  0.3  91356  2760 ?        Sl   Jan28   0:00 /usr/lib/gnome-online-accounts/goa-
+preston   2093  0.0  0.9  41796  7128 ?        Sl   Jan28   0:02 gnome-screensaver
+preston   2110  0.0  0.5  53500  3908 ?        Sl   Jan28   0:00 zeitgeist-datahub
+preston   2116  0.0  0.5  44172  3932 ?        Sl   Jan28   0:00 /usr/bin/zeitgeist-daemon
+preston   2123  0.0  0.6  51968  4684 ?        Sl   Jan28   0:00 /usr/lib/zeitgeist/zeitgeist-fts
+preston   2131  0.0  0.0   4228    56 ?        S    Jan28   0:00 /bin/cat
+preston   2134  0.0  0.7  73524  5556 ?        Sl   Jan28   0:03 /usr/lib/unity-lens-applications/un
+preston   2136  0.0  0.4  84280  3740 ?        Sl   Jan28   0:00 /usr/lib/unity-lens-files/unity-fil
+preston   2138  0.0  0.3  76780  3040 ?        Sl   Jan28   0:00 /usr/lib/unity-lens-music/unity-mus
+preston   2140  0.0  0.6  86268  5260 ?        Sl   Jan28   0:00 /usr/bin/python /usr/lib/unity-lens
+preston   2178  0.0  0.8  98388  6260 ?        Sl   Jan28   0:00 /usr/bin/python /usr/lib/unity-scop
+preston   2179  0.0  0.2  74492  2048 ?        Sl   Jan28   0:00 /usr/lib/unity-lens-music/unity-mus
+preston   2431  0.0  0.3  36152  2420 ?        Sl   Jan28   0:00 /usr/lib/at-spi2-core/at-spi-bus-la
+preston   2463  0.0  1.1  68608  8712 ?        Sl   Jan28   0:08 update-notifier
+preston   2464  0.0  1.9 116964 14904 ?        Sl   Jan28   0:00 /usr/bin/python /usr/bin/jockey-gtk
+root      2499  0.0  0.8  17980  6876 ?        S    Jan28   0:00 /usr/bin/python /usr/lib/system-ser
+preston   3070  0.0  0.4  43904  3148 ?        Sl   Jan28   0:00 /usr/lib/deja-dup/deja-dup/deja-dup
+preston   3075  0.0  1.5  24104 11700 ?        S    Jan28   0:01 /usr/bin/python /usr/lib/ubuntuone-
+root      5898  0.0  0.0      0     0 ?        S    Jan28   0:00 [flush-8:0]
+root      7094  0.0  0.2   7224  2088 ?        Ss   Jan28   0:00 /usr/sbin/modem-manager
+root      7096  0.0  0.5  32412  4012 ?        Ssl  Jan28   0:00 NetworkManager
+root      7100  0.0  0.1   2928  1008 ?        S    Jan28   0:00 /sbin/dhclient -d -4 -sf /usr/lib/N
+nobody    7171  0.0  0.1   5404   848 ?        S    Jan28   0:00 /usr/sbin/dnsmasq --no-resolv --kee
+root      7677  0.0  0.4  15836  3188 ?        Sl   Jan28   0:00 /usr/lib/accountsservice/accounts-d
+root      7680  0.0  0.4  25232  3608 ?        Sl   Jan28   0:00 /usr/lib/policykit-1/polkitd --no-d
+root      7919  0.0  0.3  11076  2712 ?        Ss   Jan28   0:00 /usr/sbin/cupsd -F
+preston   8000  0.2  1.7  90368 13752 ?        Rl   Jan28   0:32 gnome-terminal
+preston   8010  0.0  0.0   2404   584 ?        S    Jan28   0:00 gnome-pty-helper
+preston   8011  0.0  0.4   7224  3192 pts/2    Ss   Jan28   0:01 bash
+whoopsie  8446  0.0  0.5  26028  4308 ?        Ssl  Jan28   0:00 whoopsie
+syslog    8597  0.0  0.1  30040  1228 ?        Sl   Jan28   0:00 rsyslogd -c5
+root      8716  0.0  0.0   2176   712 ?        Ss   Jan28   0:00 acpid -c /etc/acpi/events -s /var/r
+avahi     8860  0.0  0.1   3456  1300 ?        S    Jan28   0:00 avahi-daemon: running [ubuntu.local
+avahi     8862  0.0  0.0   3456   392 ?        S    Jan28   0:00 avahi-daemon: chroot helper
+root     10765  0.0  0.0   2836   608 ?        S    Jan28   0:00 upstart-udev-bridge --daemon
+root     10767  0.0  0.1   3260  1476 ?        Ss   Jan28   0:00 /sbin/udevd --daemon
+root     13225  0.0  0.1   3256  1148 ?        S    Jan28   0:00 /sbin/udevd --daemon
+root     13741  0.0  0.0      0     0 ?        S<   Jan28   0:00 [xfsalloc]
+root     13742  0.0  0.0      0     0 ?        S<   Jan28   0:00 [xfs_mru_cache]
+root     13743  0.0  0.0      0     0 ?        S<   Jan28   0:00 [xfslogd]
+root     13746  0.0  0.0      0     0 ?        S    Jan28   0:00 [jfsIO]
+root     13747  0.0  0.0      0     0 ?        S    Jan28   0:00 [jfsCommit]
+root     13748  0.0  0.0      0     0 ?        S    Jan28   0:00 [jfsSync]
+root     13860  0.0  0.4  28508  3788 ?        Sl   Jan28   0:01 /usr/lib/upower/upowerd
+preston  26864  0.0  1.0  40008  7952 ?        Sl   Jan28   0:00 /usr/lib/notify-osd/notify-osd
+lp       27494  0.0  0.1   6228  1368 ?        S    Jan28   0:00 /usr/lib/cups/notifier/dbus dbus://
+preston  28574  0.0  0.1   4460   792 pts/2    S+   Jan28   0:00 script /home/preston/yuyul-log.txt
+preston  28575  0.0  0.0   4464   364 pts/2    S+   Jan28   0:00 script /home/preston/yuyul-log.txt
+preston  28576  0.0  0.4   7164  3560 pts/3    Ss   Jan28   0:00 bash -i
+preston  28885  0.0  0.1   4460   792 pts/3    S+   Jan28   0:00 script /home/preston/yuyul-log.txt
+preston  28886  0.0  0.0   4464   364 pts/3    S+   Jan28   0:00 script /home/preston/yuyul-log.txt
+preston  28887  0.0  0.4   7164  3540 pts/4    Ss   Jan28   0:00 bash -i
+preston  28953  0.0  0.1   4460   792 pts/4    S+   Jan28   0:00 script /home/preston/yuyul-log.txt
+preston  28954  0.0  0.0   4464   364 pts/4    S+   Jan28   0:00 script /home/preston/yuyul-log.txt
+preston  28955  0.0  0.4   7164  3540 pts/5    Ss   Jan28   0:00 bash -i
+preston  29023  0.0  0.1   4460   792 pts/5    S+   Jan28   0:00 script /home/preston/yuyul-log.txt
+preston  29024  0.0  0.0   4464   364 pts/5    S+   Jan28   0:00 script /home/preston/yuyul-log.txt
+preston  29025  0.0  0.4   7164  3540 pts/6    Ss   Jan28   0:00 bash -i
+preston  29103  0.0  0.1   4460   792 pts/6    S+   Jan28   0:00 script /home/preston/yuyul-log.txt
+preston  29104  0.0  0.0   4464   364 pts/6    S+   Jan28   0:00 script /home/preston/yuyul-log.txt
+preston  29105  0.0  0.4   7164  3540 pts/7    Ss   Jan28   0:00 bash -i
+preston  29165  0.0  0.1   4460   792 pts/7    S+   Jan28   0:00 script /home/preston/yuyul-log.txt
+preston  29166  0.0  0.0   4464   364 pts/7    S+   Jan28   0:00 script /home/preston/yuyul-log.txt
+preston  29167  0.0  0.4   7164  3540 pts/8    Ss   Jan28   0:00 bash -i
+root     29591  0.0  0.0      0     0 ?        S    Jan28   0:00 [kworker/0:1]
+root     29843  0.0  0.0      0     0 ?        S    Jan28   0:00 [kworker/0:0]
+preston  29943  0.0  0.1   4460   792 pts/8    S+   Jan28   0:00 script /home/preston/yuyul-log.txt
+preston  29944  0.0  0.0   4464   364 pts/8    S+   Jan28   0:00 script /home/preston/yuyul-log.txt
+preston  29945  0.0  0.4   7164  3548 pts/9    Ss   Jan28   0:00 bash -i
+preston  30009  0.0  0.1   4460   792 pts/9    S+   Jan28   0:00 script /home/preston/yuyul-log.txt
+preston  30010  0.0  0.0   4464   364 pts/9    S+   Jan28   0:00 script /home/preston/yuyul-log.txt
+preston  30011  0.1  0.4   7164  3564 pts/10   Ss   Jan28   0:00 bash -i
+root     30094  0.0  0.0      0     0 ?        S    Jan28   0:00 [kworker/0:2]
+preston  30170  0.7  0.2   6740  1876 pts/10   S    00:00   0:00 xeyes
+preston  30181  0.0  0.1   4944  1156 pts/10   R+   00:00   0:00 ps aux
+[12:00:34]preston@ubuntu:/var/log$ 
+[12:00:35]preston@ubuntu:/var/log$ ps aux | grep gnome
+preston   1785  0.0  0.3  54912  2708 ?        Sl   Jan28   0:00 /usr/bin/[01;31m[Kgnome[m[K-keyring-daemon --daemonize --login
+preston   1795  0.0  0.8  50272  6152 ?        Ssl  Jan28   0:00 [01;31m[Kgnome[m[K-session --session=ubuntu
+preston   1831  0.0  0.0   4080    20 ?        Ss   Jan28   0:00 /usr/bin/ssh-agent /usr/bin/dbus-launch --exit-with-session [01;31m[Kgnome[m[K-session --session=ubuntu
+preston   1834  0.0  0.0   3940   180 ?        S    Jan28   0:00 /usr/bin/dbus-launch --exit-with-session [01;31m[Kgnome[m[K-session --session=ubuntu
+preston   1846  0.0  1.3 203484 10356 ?        Sl   Jan28   0:11 /usr/lib/[01;31m[Kgnome[m[K-settings-daemon/[01;31m[Kgnome[m[K-settings-daemon
+preston   1879  0.0  1.1  78784  8936 ?        Sl   Jan28   0:01 /usr/lib/policykit-1-[01;31m[Kgnome[m[K/polkit-[01;31m[Kgnome[m[K-authentication-agent-1
+preston   1884  0.0  0.7  57268  5404 ?        Sl   Jan28   0:00 /usr/lib/[01;31m[Kgnome[m[K-settings-daemon/[01;31m[Kgnome[m[K-fallback-mount-helper
+preston   2072  0.0  0.7  42660  5456 ?        Sl   Jan28   0:00 /usr/lib/[01;31m[Kgnome[m[K-disk-utility/gdu-notification-daemon
+preston   2087  0.0  0.3  91356  2760 ?        Sl   Jan28   0:00 /usr/lib/[01;31m[Kgnome[m[K-online-accounts/goa-daemon
+preston   2093  0.0  0.9  41796  7128 ?        Sl   Jan28   0:02 [01;31m[Kgnome[m[K-screensaver
+preston   8000  0.2  1.7  90368 13752 ?        Sl   Jan28   0:32 [01;31m[Kgnome[m[K-terminal
+preston   8010  0.0  0.0   2404   584 ?        S    Jan28   0:00 [01;31m[Kgnome[m[K-pty-helper
+preston  30185  0.0  0.1   4392   816 pts/10   S+   00:00   0:00 grep --color=auto [01;31m[Kgnome[m[K
+[12:00:41]preston@ubuntu:/var/log$ 
+[12:00:42]preston@ubuntu:/var/log$ ps as[Kux | grep xeyes
+preston  30170  0.7  0.2   6740  1876 pts/10   S    00:00   0:00 [01;31m[Kxeyes[m[K
+preston  30188  0.0  0.1   4388   816 pts/10   S+   00:00   0:00 grep --color=auto [01;31m[Kxeyes[m[K
+[12:00:50]preston@ubuntu:/var/log$ kill 30170
+[12:01:02]preston@ubuntu:/var/log$ d[K
+[1]+  Terminated              xeyes
+[12:01:05]preston@ubuntu:/var/log$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1        63G  3.3G   56G   6% /
+udev            367M  4.0K  367M   1% /dev
+tmpfs           150M  804K  150M   1% /run
+none            5.0M     0  5.0M   0% /run/lock
+none            375M   80K  375M   1% /run/shm
+none            4.0T     0  4.0T   0% /media/psf
+/dev/sr0         36M   36M     0 100% /media/CDROM
+[12:01:07]preston@ubuntu:/var/log$ 
+[12:01:09]preston@ubuntu:/var/log$ ifcongi[K[Kg[Kfig
+eth0      Link encap:Ethernet  HWaddr 00:1c:42:5e:b6:31  
+          inet addr:10.211.55.5  Bcast:10.211.55.255  Mask:255.255.255.0
+          inet6 addr: fdb2:2c26:f4e4:0:21c:42ff:fe5e:b631/64 Scope:Global
+          inet6 addr: fe80::21c:42ff:fe5e:b631/64 Scope:Link
+          inet6 addr: fdb2:2c26:f4e4:0:602a:4d36:d89c:62f9/64 Scope:Global
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:214647 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:101140 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:302988844 (302.9 MB)  TX bytes:6396118 (6.3 MB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:16436  Metric:1
+          RX packets:2055 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:2055 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:183974 (183.9 KB)  TX bytes:183974 (183.9 KB)
+
+[12:01:12]preston@ubuntu:/var/log$ cat /etc/shadow
+cat: /etc/shadow: Permission denied
+[12:01:20]preston@ubuntu:/var/log$ 
+[12:01:23]preston@ubuntu:/var/log$ sudo su
+[sudo] password for preston: 
+]0;root@ubuntu: /var/logroot@ubuntu:/var/log# exithead -6 /tmp/list[5Pvi[C[C[C[C[C[C[C[C[C[Ccat /etc/shadow
+root:!:16096:0:99999:7:::
+daemon:*:15749:0:99999:7:::
+bin:*:15749:0:99999:7:::
+sys:*:15749:0:99999:7:::
+sync:*:15749:0:99999:7:::
+games:*:15749:0:99999:7:::
+man:*:15749:0:99999:7:::
+lp:*:15749:0:99999:7:::
+mail:*:15749:0:99999:7:::
+news:*:15749:0:99999:7:::
+uucp:*:15749:0:99999:7:::
+proxy:*:15749:0:99999:7:::
+www-data:*:15749:0:99999:7:::
+backup:*:15749:0:99999:7:::
+list:*:15749:0:99999:7:::
+irc:*:15749:0:99999:7:::
+gnats:*:15749:0:99999:7:::
+nobody:*:15749:0:99999:7:::
+libuuid:!:15749:0:99999:7:::
+syslog:*:15749:0:99999:7:::
+messagebus:*:15749:0:99999:7:::
+colord:*:15749:0:99999:7:::
+lightdm:*:15749:0:99999:7:::
+whoopsie:*:15749:0:99999:7:::
+avahi-autoipd:*:15749:0:99999:7:::
+avahi:*:15749:0:99999:7:::
+usbmux:*:15749:0:99999:7:::
+kernoops:*:15749:0:99999:7:::
+pulse:*:15749:0:99999:7:::
+rtkit:*:15749:0:99999:7:::
+speech-dispatcher:!:15749:0:99999:7:::
+hplip:*:15749:0:99999:7:::
+saned:*:15749:0:99999:7:::
+preston:$6$HyKhPBe2$wvyN/.NKpiZK.fWDqjgaClB3eIDofUTO3tXMLRy/YcB8uRrDR63ExbOiZ4GRrPNH4yJj7veZn9bDYUdSfwrKR.:16096:0:99999:7:::
+]0;root@ubuntu: /var/logroot@ubuntu:/var/log# vi /tmp/list
+[?1049h[?1h=[1;41r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[41;1H"/tmp/list" 11L, 347C[>c[1;1H[34m#       PASS_MAX_DAYS   Maximum number of days a password may be used.
+#       PASS_MIN_DAYS   Minimum number of days allowed between password changes.
+#       PASS_WARN_AGE   Number of days warning given before a password expires.[m
+PASS_MAX_DAYS   99999
+PASS_MIN_DAYS   0
+PASS_WARN_AGE   7
+[34m#PASS_CHANGE_TRIES
+#PASS_ALWAYS_WARN
+#PASS_MIN_LEN
+#PASS_MAX_LEN
+# NO_PASSWORD_CONSOLE[m
+[1m[34m~                                                                                                   [13;1H~                                                                                                   [14;1H~                                                                                                   [15;1H~                                                                                                   [16;1H~                                                                                                   [17;1H~                                                                                                   [18;1H~                                                                                                   [19;1H~                                                                                                   [20;1H~                                                                                                   [21;1H~                                                                                                   [22;1H~                                                                                                   [23;1H~                                                                                                   [24;1H~                                                                                                   [25;1H~                                                                                                   [26;1H~                                                                                                   [27;1H~                                                                                                   [28;1H~                                                                                                   [29;1H~                                                                                                   [30;1H~                                                                                                   [31;1H~                                                                                                   [32;1H~                                                                                                   [33;1H~                                                                                                   [34;1H~                                                                                                   [35;1H~                                                                                                   [36;1H~                                                                                                   [37;1H~                                                                                                   [38;1H~                                                                                                   [39;1H~                                                                                                   [40;1H~                                                                                                   [m[41;83H1,1[11CAll[1;1H[?12l[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[41;83H2[2;1H[?12l[?25h[?25l[41;83H3[3;1H[?12l[?25h[?25l[41;83H4[4;1H[?12l[?25h[?25l[41;83H5[5;1H[?12l[?25h[?25l[41;83H6[6;1H[?12l[?25h[?25l[41;83H5[5;1H[?12l[?25h[?25l[41;83H4[4;1H[?12l[?25h[?25l[41;83H5[5;1H[?12l[?25h[?25l[41;83H6[6;1H[?12l[?25h[?25l[41;85H2[6;2H[?12l[?25h[?25l[41;85H3[6;3H[?12l[?25h[?25l[41;85H4[6;4H[?12l[?25h[?25l[41;85H5[6;5H[?12l[?25h[?25l[41;85H6[6;6H[?12l[?25h[?25l[41;85H7[6;7H[?12l[?25h[?25l[41;85H8[6;8H[?12l[?25h[?25l[41;85H9[6;9H[?12l[?25h[?25l[41;85H10[6;10H[?12l[?25h[?25l[41;86H1[6;11H[?12l[?25h[?25l[41;86H2[6;12H[?12l[?25h[?25l[41;86H3[6;13H[?12l[?25h[?25l[41;86H4-16[6;16H[?12l[?25h[?25l[41;86H5-17[6;17H[?12l[?25h[?25l[41;1H[1m-- INSERT --[m[41;13H[K[41;83H6,15-17[7CAll[6;17H[?12l[?25h[?25l 17[41;86H6-18[6;18H[?12l[?25h[?25l107[41;86H7-19[6;19H[?12l[?25h[?25l007[41;86H8-20[6;20H[?12l[?25h[?25l[41;86H9-21[6;21H[?12l[?25h[?25l[6;20H[K[41;86H8-20[6;20H[?12l[?25h[41;1H[K[6;19H[?25l[41;83H6,17-19[7CAll[6;19H[?12l[?25h[?25l[41;83H[K[41;1H:[?12l[?25hw[?25l[?12l[?25hq[?25l[?12l[?25h[?25l"/tmp/list" 11L, 349C written
+[?1l>[?12l[?25h[?1049l]0;root@ubuntu: /var/logroot@ubuntu:/var/log# head -6 /tmp/list
+#	PASS_MAX_DAYS	Maximum number of days a password may be used.
+#	PASS_MIN_DAYS	Minimum number of days allowed between password changes.
+#	PASS_WARN_AGE	Number of days warning given before a password expires.
+PASS_MAX_DAYS	99999
+PASS_MIN_DAYS	0
+PASS_WARN_AGE	100
+]0;root@ubuntu: /var/logroot@ubuntu:/var/log# exit
+exit
+[12:02:14]preston@ubuntu:/var/log$ exit
+exit
+
+Script done on Wed 29 Jan 2014 12:02:22 AM EST

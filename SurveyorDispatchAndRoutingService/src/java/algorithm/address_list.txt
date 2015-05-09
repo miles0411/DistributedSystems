@@ -1,0 +1,10 @@
+0,4600 Silver Hill Road DC,10
+1,1518 U Street Northwest DC,8
+2,25 Massachusetts Avenue Northwest DC,7
+3,2132 Florida Ave NW  DC,6
+4,1063 Wisconsin Ave NW DC,6
+5,1110 Vermont Ave NW DC,6
+6,518 10th St NW DC,5
+7,806 15th St NW DC,7
+8,1226 36th Street NW DC,8
+9,1001 14th St NW DC,5

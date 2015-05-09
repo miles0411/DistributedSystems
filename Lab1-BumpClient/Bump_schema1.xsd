@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://Lab5/" xmlns:tns="http://Lab5/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="Bump" nillable="true" type="tns:bump"/>
+
+  <xs:element name="BumpResponse" nillable="true" type="tns:bumpResponse"/>
+
+  <xs:element name="get" nillable="true" type="tns:get"/>
+
+  <xs:element name="getResponse" nillable="true" type="tns:getResponse"/>
+
+  <xs:complexType name="bump">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="bumpResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="get">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="getResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:integer" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+
