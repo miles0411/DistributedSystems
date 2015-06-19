@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Give me your currently living city, find a coffee shop in the city! The format can be: 1) New York or 2) New York, NY</string>
+    <string name="app_name">Find Coffee Shop</string>
+    <string name="result"></string>
+   
+</resources>
